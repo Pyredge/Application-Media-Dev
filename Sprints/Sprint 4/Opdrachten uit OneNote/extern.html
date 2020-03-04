@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="functies.js">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<button onclick="myFunction()">Voer code in</button>
+
+<p id="divResult"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var code = prompt("Vul uw promotiecode in", 'uw code');
+  if (code == null || code == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "De code die u invoerde was: " + code + "";
+  }
+  document.getElementById("divResult").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
